@@ -32,7 +32,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          {<img src={logo} alt="Logo" />}
+          {/* {<img src={logo} alt="Logo" />} */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -79,9 +79,14 @@ export const NavBar = () => {
                 <HiDocument />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
+            <Nav.Link
+              href="#contact"
+              onClick={() => onUpdateActiveLink("contact")}
+            >
+              <button className="vvd">
+                <span>Let's Connect</span>
+              </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>

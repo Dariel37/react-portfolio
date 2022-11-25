@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -46,11 +46,16 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <img src={contactImg} alt="Contact Us" />
+            <Player
+              src="https://assets8.lottiefiles.com/private_files/lf30_nsqfzxxx.json"
+              className="player"
+              loop
+              autoplay
+            />
           </Col>
           <Col md={6}>
             <h2>Get in Touch</h2>

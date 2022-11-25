@@ -12,6 +12,9 @@ import projImg8 from "../assets/img/VRMultiplayer.png";
 import projImg9 from "../assets/img/Thirdperson.png";
 import projImg10 from "../assets/img/ToonTank.png";
 import projImg11 from "../assets/img/Shooter.png";
+
+import { Player } from "@lottiefiles/react-lottie-player";
+
 import { FaUnity } from "react-icons/fa";
 import { SiUnrealengine } from "react-icons/si";
 import { GiWorld } from "react-icons/gi";
@@ -68,6 +71,11 @@ export const Projects = () => {
       title: "RetroHack",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg5,
+    },
+    {
+      animation: true,
+      animationUrl:
+        "https://assets5.lottiefiles.com/private_files/lf30_jqzd2t9v.json",
     },
   ];
 
