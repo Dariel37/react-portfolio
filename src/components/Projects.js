@@ -22,14 +22,9 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Personal Portfolio",
-      description: "Web Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "CARLA Project dedicated Webpage",
-      description: "Internship at Arecibo Observatory",
-      imgUrl: projImg2,
+      title: "Energy Depot Webpage",
+      description: "Web Design & Development",
+      imgUrl: projImg4,
     },
     {
       title: "Financial Calculator",
@@ -37,27 +32,22 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "Energy Depot Webpage",
-      description: "Web Design & Development",
-      imgUrl: projImg4,
+      title: "CARLA Project dedicated Webpage",
+      description: "Internship at Arecibo Observatory",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Personal Portfolio",
+      description: "Web Development",
+      imgUrl: projImg1,
     },
   ];
 
   const Unity = [
     {
-      title: "RetroHack",
-      description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg5,
-    },
-    {
-      title: "KindledSpirits",
-      description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg6,
-    },
-    {
-      title: "Synergy",
-      description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg7,
+      title: "Thirdperson",
+      description: "Udemy Unity Course  ",
+      imgUrl: projImg9,
     },
     {
       title: "VR Multiplayer",
@@ -65,22 +55,32 @@ export const Projects = () => {
       imgUrl: projImg8,
     },
     {
-      title: "Thirdperson",
-      description: "Udemy Unity Course  ",
-      imgUrl: projImg9,
+      title: "Synergy",
+      description: "VR Developer bootcamp at XR TERRA",
+      imgUrl: projImg7,
+    },
+    {
+      title: "KindledSpirits",
+      description: "VR Developer bootcamp at XR TERRA",
+      imgUrl: projImg6,
+    },
+    {
+      title: "RetroHack",
+      description: "VR Developer bootcamp at XR TERRA",
+      imgUrl: projImg5,
     },
   ];
 
   const UnrealEngine = [
     {
-      title: "ToonTank",
-      description: "Udemy Unreal Engine Course",
-      imgUrl: projImg10,
-    },
-    {
       title: "3rd Person Shooter",
       description: "Udemy Unreal Engine Course",
       imgUrl: projImg11,
+    },
+    {
+      title: "ToonTank",
+      description: "Udemy Unreal Engine Course",
+      imgUrl: projImg10,
     },
   ];
 
@@ -112,18 +112,17 @@ export const Projects = () => {
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">
-                    {" "}
-                    <GiWorld /> Webpage
+                    <GiWorld /> <span>Webpage</span>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="second">
-                    <FaUnity /> Unity
+                    <FaUnity /> <span>Unity</span>
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">
-                    <SiUnrealengine /> Unreal Engine
+                    <SiUnrealengine /> <span>Unreal</span>
                   </Nav.Link>
                 </Nav.Item>
               </Nav>

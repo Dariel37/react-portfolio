@@ -148,6 +148,7 @@ span.navbar-text {
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .social-icon a::before {
   content: "";
   width: 42px;
@@ -161,9 +162,19 @@ span.navbar-text {
 .social-icon a:hover::before {
   transform: scale(1);
 }
+.social-icon a svg {
+  fill: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.social-icon a:hover svg path {
+  fill: rgb(0, 0, 0);
+  stroke: rgb(0, 0, 0);
+}
+
 .social-icon a img {
   width: 40%;
-  z-index: 1;
+
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
@@ -196,7 +207,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #000000;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -258,9 +269,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.title {
 }
 
 .text-container {
@@ -411,7 +419,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 17px 0;
   color: #fff;
   width: 100%;
-  font-size: 17px;
+  font-size: 20px;
+  white-space: nowrap;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -419,6 +428,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
+
+@media (max-width: 600px) {
+  .project .nav.nav-pills .nav-link span {
+    display: none;
+  }
+  .project .nav.nav-pills .nav-link {
+    font-size: 28px;
+  }
+}
+
 .project .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
@@ -501,7 +520,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #00adb5 -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;
