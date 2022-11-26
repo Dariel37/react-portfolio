@@ -13,10 +13,10 @@ import projImg9 from "../assets/img/Thirdperson.png";
 import projImg10 from "../assets/img/ToonTank.png";
 import projImg11 from "../assets/img/Shooter.png";
 
-import { Player } from "@lottiefiles/react-lottie-player";
+// import { Player } from "@lottiefiles/react-lottie-player";
 
 import { FaUnity } from "react-icons/fa";
-import { SiHellofresh, SiUnrealengine } from "react-icons/si";
+import { SiUnrealengine } from "react-icons/si";
 import { GiWorld } from "react-icons/gi";
 
 import "animate.css";
@@ -168,7 +168,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} />
+      <img
+        className="background-image-right"
+        alt="default-img"
+        src={colorSharp2}
+      />
     </section>
   );
 };

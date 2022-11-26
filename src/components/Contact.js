@@ -60,33 +60,6 @@ export const Contact = () => {
                 </Col>
               </Row>
             </form>
-            {/* <form name="contact" method="POST" data-netlify="true" action="/">
-              <p>
-                <label>
-                  Name <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Email <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form> */}
-            {/* <h4>
-              If you want to ask me any question or just chat click that button
-              below 👇
-            </h4>
-            <br />
-            <br />
-            <a
-              style={{ textDecoration: "none" }}
-              href="mailto:vidaldariel93@gmail.com"
-            >
-              <div className="contactbtn">Get in Touch</div>
-            </a> */}
           </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+// import logo from "../assets/img/logo.svg";
 
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiDocument } from "react-icons/hi";
