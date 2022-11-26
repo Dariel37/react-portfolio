@@ -1,50 +1,7 @@
-import { useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  };
-
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("send");
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (category, value) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      header: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong, please try again later.",
-      });
-    }
-  };
-
   return (
     <section className="contact" id="contact">
       <Container>
@@ -58,76 +15,61 @@ export const Contact = () => {
             />
           </Col>
           <Col md={6}>
-            <h2>Get in Touch</h2>
-            {/* onSubmit={handleSubmit} */}
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              onSubmit="submit"
-            >
+            {/* <h2>Get in Touch</h2> */}
+
+            {/* <form name="contact" method="POST" data-netlify="true" action="/">
               <Row>
                 <Col sm={6} className="px-1">
-                  <input
-                    type="text"
-                    value={formDetails.firstName}
-                    placeholder="First Name"
-                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
-                    name="name"
-                  />
+                  <input type="text" placeholder="First Name" name="name" />
                 </Col>
                 <Col sm={6} className="px-1">
-                  <input
-                    type="text"
-                    value={formDetails.lastName}
-                    placeholder="First Name"
-                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
-                    name="lastname"
-                  />
+                  <input type="text" placeholder="First Name" name="name" />
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
                     type="email"
-                    value={formDetails.email}
                     placeholder="Email Address"
-                    onChange={(e) => onFormUpdate("email", e.target.value)}
                     name="email"
                   />
                 </Col>
                 <Col sm={6} className="px-1">
-                  <input
-                    type="tel"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
-                    name="tel"
-                  />
+                  <input type="tel" placeholder="Phone No." name="tel" />
                 </Col>
                 <Col>
-                  <textarea
-                    row="6"
-                    value={formDetails.message}
-                    placeholder="Message"
-                    onChange={(e) => onFormUpdate("message", e.target.value)}
-                    name="message"
-                  />
+                  <textarea row="6" placeholder="Message" name="message" />
                   <button type="submit">
-                    <span>{buttonText}</span>
+                    <span>send</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
-            </form>
+            </form> */}
+            {/* <form name="contact" method="POST" data-netlify="true" action="/">
+              <p>
+                <label>
+                  Name <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Email <input type="email" name="email" />
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form> */}
+            <h4>
+              If you want to ask me any question or just chat click that button
+              below 👇
+            </h4>
+            <br />
+            <br />
+            <a
+              style={{ textDecoration: "none" }}
+              href="mailto:vidaldariel93@gmail.com"
+            >
+              <div className="contactbtn">Get in Touch</div>
+            </a>
           </Col>
         </Row>
       </Container>

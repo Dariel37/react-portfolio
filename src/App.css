@@ -370,9 +370,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-.skill-slider .item img {
-  width: 50%;
+.skill-slider .item {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  border: solid 10px cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -666,6 +675,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+.contactbtn {
+  font-size: 3rem;
+  background: linear-gradient(90.21deg, #00adb5 -5.91%, #4a2fbd 111.58%);
+  border-radius: 15px;
+  color: #fff;
+  padding: 2rem;
+
+  text-align: center;
+}
+
 .footer img {
   width: 26%;
 }
