@@ -5,7 +5,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Typewriter from "typewriter-effect";
-
+//test
 export const Banner = () => {
   return (
     <section className="banner" id="home">
