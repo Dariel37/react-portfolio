@@ -504,6 +504,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
+.proj-txtx button {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  background: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;

@@ -16,7 +16,7 @@ import projImg11 from "../assets/img/Shooter.png";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 import { FaUnity } from "react-icons/fa";
-import { SiUnrealengine } from "react-icons/si";
+import { SiHellofresh, SiUnrealengine } from "react-icons/si";
 import { GiWorld } from "react-icons/gi";
 
 import "animate.css";
@@ -28,21 +28,26 @@ export const Projects = () => {
       title: "Energy Depot Webpage",
       description: "Web Design & Development",
       imgUrl: projImg4,
+      link: "https://energydepotpr.com/?gclid=Cj0KCQiAj4ecBhD3ARIsAM4Q_jFavi72AVv7N2ZZUUd7ltsqILsDMiHcg_z874Q8mRtKTVNNzxvKXpUaAoaiEALw_wcB",
     },
     {
       title: "Financial Calculator",
       description: "Internship at Outcome Project",
       imgUrl: projImg3,
+      link: "https://ian-matias-dariel-vidal-projects.shinyapps.io/deploy/",
     },
     {
       title: "CARLA Project dedicated Webpage",
       description: "Internship at Arecibo Observatory",
       imgUrl: projImg2,
+
+      link: "http://www.naic.edu/ao/scientist-user-portal/atmospheric/rof/carla-project",
     },
     {
       title: "Personal Portfolio",
       description: "Web Development",
       imgUrl: projImg1,
+      link: "https://dariel37.github.io/CSS-WebPage/",
     },
   ];
 
@@ -51,6 +56,7 @@ export const Projects = () => {
       title: "Thirdperson",
       description: "Udemy Unity Course  ",
       imgUrl: projImg9,
+      link: "/Third-Person",
     },
     {
       title: "VR Multiplayer",

@@ -5,6 +5,7 @@ export const ProjectCard = ({
   description,
   imgUrl,
   animation,
+  link,
   animationUrl,
 }) => {
   return (
@@ -25,6 +26,14 @@ export const ProjectCard = ({
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
+            <br />
+            <button>
+              {" "}
+              <a style={{ textDecoration: "none" }} href={`${link}`}>
+                {" "}
+                Preview
+              </a>
+            </button>
           </div>
         </div>
       )}
