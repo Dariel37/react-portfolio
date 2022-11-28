@@ -31,8 +31,8 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                I have experience in different programming languages like
-                <br></br> C#, C++. web app, using Shiny app, R programming
+                I have experience in different programming languages
+                <br></br> Created web apps using Shiny app and R programming
                 language. <br></br> For Webpage development, I worked with HTML,
                 CSS, BOOTSTRAP, React, EJS <br></br>
               </p>

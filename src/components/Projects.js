@@ -4,14 +4,15 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/Webpage.png";
 import projImg2 from "../assets/img/AO.png";
 import projImg3 from "../assets/img/Financial.png";
-import projImg4 from "../assets/img/EnergyDepot.png";
-import projImg5 from "../assets/img/RetroHack3.png";
-import projImg6 from "../assets/img/KindledSpirits6.png";
-import projImg7 from "../assets/img/Synergy.png";
-import projImg8 from "../assets/img/VRMultiplayer.png";
-import projImg9 from "../assets/img/Thirdperson.png";
-import projImg10 from "../assets/img/ToonTank.png";
-import projImg11 from "../assets/img/Shooter.png";
+import projImg4 from "../assets/img/portfolio.png";
+import projImg5 from "../assets/img/EnergyDepot.png";
+import projImg6 from "../assets/img/RetroHack3.png";
+import projImg7 from "../assets/img/KindledSpirits6.png";
+import projImg8 from "../assets/img/Synergy.png";
+import projImg9 from "../assets/img/VRMultiplayer.png";
+import projImg10 from "../assets/img/Thirdperson.png";
+import projImg11 from "../assets/img/ToonTank.png";
+import projImg12 from "../assets/img/Shooter.png";
 
 // import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -27,8 +28,14 @@ export const Projects = () => {
     {
       title: "Energy Depot Webpage",
       description: "Web Design & Development",
-      imgUrl: projImg4,
+      imgUrl: projImg5,
       link: "https://energydepotpr.com/?gclid=Cj0KCQiAj4ecBhD3ARIsAM4Q_jFavi72AVv7N2ZZUUd7ltsqILsDMiHcg_z874Q8mRtKTVNNzxvKXpUaAoaiEALw_wcB",
+    },
+    {
+      title: "Personal Portfolio",
+      description: "Simple Html, Css, bootstrap",
+      imgUrl: projImg4,
+      link: "https://dariel37.github.io/Portfolio/index.html",
     },
     {
       title: "Financial Calculator",
@@ -44,7 +51,7 @@ export const Projects = () => {
       link: "http://www.naic.edu/ao/scientist-user-portal/atmospheric/rof/carla-project",
     },
     {
-      title: "Personal Portfolio",
+      title: "Personal Webpage",
       description: "Web Development",
       imgUrl: projImg1,
       link: "https://dariel37.github.io/CSS-WebPage/",
@@ -55,28 +62,28 @@ export const Projects = () => {
     {
       title: "Thirdperson",
       description: "Udemy Unity Course  ",
-      imgUrl: projImg9,
-      link: "/Third-Person",
+      imgUrl: projImg10,
+      // link: "/Third-Person",
     },
     {
       title: "VR Multiplayer",
       description: "Udemy Unity VR Course  ",
-      imgUrl: projImg8,
+      imgUrl: projImg9,
     },
     {
       title: "Synergy",
       description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg7,
+      imgUrl: projImg8,
     },
     {
       title: "KindledSpirits",
       description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg6,
+      imgUrl: projImg7,
     },
     {
       title: "RetroHack",
       description: "VR Developer bootcamp at XR TERRA",
-      imgUrl: projImg5,
+      imgUrl: projImg6,
     },
     {
       animation: true,
@@ -89,12 +96,12 @@ export const Projects = () => {
     {
       title: "3rd Person Shooter",
       description: "Udemy Unreal Engine Course",
-      imgUrl: projImg11,
+      imgUrl: projImg12,
     },
     {
       title: "ToonTank",
       description: "Udemy Unreal Engine Course",
-      imgUrl: projImg10,
+      imgUrl: projImg11,
     },
   ];
 

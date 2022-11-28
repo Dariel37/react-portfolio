@@ -35,9 +35,9 @@ export const Banner = () => {
                     />
                   </h1>
                   <p>
-                    I graduated in computer Science Degree with a minor in
-                    VideoGame Design and Development at the Inter American
-                    University Bayamon Campus.
+                    I graduated in Computer Science with a minor in Videogame
+                    Design and Development at Inter American University, Bayamon
+                    Campus.
                   </p>
 
                   <button onClick={() => console.log("connect")}>
