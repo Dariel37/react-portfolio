@@ -74,16 +74,19 @@ export const Projects = () => {
       title: "Synergy",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg8,
+      link: "https://youtu.be/LFuAdHmYI-E",
     },
     {
       title: "KindledSpirits",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg7,
+      link: "https://youtu.be/d3E3f8ukysg",
     },
     {
       title: "RetroHack",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg6,
+      link: "https://youtu.be/mh6l6aax8TU",
     },
     {
       animation: true,
@@ -97,11 +100,13 @@ export const Projects = () => {
       title: "3rd Person Shooter",
       description: "Udemy Unreal Engine Course",
       imgUrl: projImg12,
+      link: "https://youtu.be/XppItxSJUL8",
     },
     {
       title: "ToonTank",
       description: "Udemy Unreal Engine Course",
       imgUrl: projImg11,
+      link: "https://youtu.be/SWoJ2t6nH8s",
     },
   ];
 
