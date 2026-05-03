@@ -5,21 +5,52 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThirdPerson } from "./pages/ThirdPerson";
 import { Home } from "./pages/Home";
+import { RetroHack } from "./pages/RetroHack";
+import { CrystalRunner } from "./pages/CrystalRunner";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { ScrollToHash } from "./components/ScrollToHash";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <ScrollToHash />
+        <Home />
+      </>
+    ),
     exact: true,
   },
   {
-    path: "/Third-Person",
-    element: <ThirdPerson />,
-    exact: true,
+    path: "/projects/third-person",
+    element: (
+      <>
+        <ScrollToTop />
+        <ThirdPerson />
+      </>
+    ),
+  },
+  {
+    path: "/projects/retrohack",
+    element: (
+      <>
+        <ScrollToTop />
+        <RetroHack />
+      </>
+    ),
+  },
+  {
+    path: "/projects/crystal-runner",
+    element: (
+      <>
+        <ScrollToTop />
+        <CrystalRunner />
+      </>
+    ),
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );
 
 // If you want to start measuring performance in your app, pass a function

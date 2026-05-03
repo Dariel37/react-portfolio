@@ -13,6 +13,7 @@ import projImg9 from "../assets/img/VRMultiplayer.png";
 import projImg10 from "../assets/img/Thirdperson.png";
 import projImg11 from "../assets/img/ToonTank.png";
 import projImg12 from "../assets/img/Shooter.png";
+import crystalRunnerImg from "../assets/img/Crystal-runner/crystal-runner-enemy-attack.png";
 
 // import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -60,6 +61,13 @@ export const Projects = () => {
 
   const Unity = [
     {
+      title: "Crystal Runner",
+      description: "2D Action Platformer • Mobile & PC",
+      imgUrl: crystalRunnerImg, // import your image
+      link: "/projects/crystal-runner", // 👈 THIS is the key
+      featured: true,
+    },
+    {
       title: "Thirdperson",
       description: "Udemy Unity Course  ",
       imgUrl: projImg10,
@@ -86,7 +94,7 @@ export const Projects = () => {
       title: "RetroHack",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg6,
-      link: "https://youtu.be/mh6l6aax8TU",
+      link: "/projects/retrohack",
     },
     {
       animation: true,
