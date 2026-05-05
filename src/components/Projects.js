@@ -82,13 +82,13 @@ export const Projects = () => {
       title: "Synergy",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg8,
-      link: "https://youtu.be/LFuAdHmYI-E",
+      link: "/projects/synergy",
     },
     {
       title: "KindledSpirits",
       description: "VR Developer bootcamp at XR TERRA",
       imgUrl: projImg7,
-      link: "https://youtu.be/d3E3f8ukysg",
+      link: "/projects/kindled-spirits",
     },
     {
       title: "RetroHack",

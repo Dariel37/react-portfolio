@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThirdPerson } from "./pages/ThirdPerson";
 import { Home } from "./pages/Home";
 import { RetroHack } from "./pages/RetroHack";
+import { Synergy } from "./pages/Synergy";
+import { KindledSpirits } from "./pages/KindledSpirits";
 import { CrystalRunner } from "./pages/CrystalRunner";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { ScrollToHash } from "./components/ScrollToHash";
@@ -36,6 +38,24 @@ const router = createBrowserRouter([
       <>
         <ScrollToTop />
         <RetroHack />
+      </>
+    ),
+  },
+  {
+    path: "/projects/synergy",
+    element: (
+      <>
+        <ScrollToTop />
+        <Synergy />
+      </>
+    ),
+  },
+  {
+    path: "/projects/kindled-spirits",
+    element: (
+      <>
+        <ScrollToTop />
+        <KindledSpirits />
       </>
     ),
   },

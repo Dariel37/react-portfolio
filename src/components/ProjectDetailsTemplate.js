@@ -15,6 +15,7 @@ export const ProjectDetailsTemplate = ({
   playStoreUrl,
   itchUrl,
   heroDescription,
+  stats,
 }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -129,6 +130,14 @@ export const ProjectDetailsTemplate = ({
               </div>
 
               <p className="project-hero-description">{heroDescription}</p>
+
+              <div className="project-stats">
+                {stats?.map((stat, index) => (
+                  <div className="stat-item" key={index}>
+                    <strong>{stat.label}:</strong> {stat.value}
+                  </div>
+                ))}
+              </div>
             </Col>
 
             <Col md={6}>

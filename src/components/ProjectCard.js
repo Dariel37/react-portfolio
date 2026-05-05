@@ -32,7 +32,9 @@ export const ProjectCard = ({
             className="proj-link"
           >
             <div className={`proj-imgbx ${featured ? "featured" : ""}`}>
-              {featured && <div className="featured-badge">Featured</div>}
+              {featured && (
+                <div className="featured-badge">Live on Google Play</div>
+              )}
               <img src={imgUrl} alt={title} />
               <div className="proj-txtx">
                 <h4>{title}</h4>
@@ -49,7 +51,9 @@ export const ProjectCard = ({
         ) : (
           <Link to={link} className="proj-link">
             <div className={`proj-imgbx ${featured ? "featured" : ""}`}>
-              {featured && <div className="featured-badge">Featured</div>}
+              {featured && (
+                <div className="featured-badge">Live on Google Play</div>
+              )}
               <img src={imgUrl} alt={title} />
               <div className="proj-txtx">
                 <h4>{title}</h4>
