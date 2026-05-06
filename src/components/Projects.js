@@ -108,13 +108,13 @@ export const Projects = () => {
       title: "3rd Person Shooter",
       description: "Udemy Unreal Engine Course",
       imgUrl: projImg12,
-      link: "https://youtu.be/XppItxSJUL8",
+      link: "/projects/thirdperson-shooter",
     },
     {
       title: "ToonTank",
       description: "Udemy Unreal Engine Course",
       imgUrl: projImg11,
-      link: "https://youtu.be/SWoJ2t6nH8s",
+      link: "/projects/toon-tank",
     },
   ];
 

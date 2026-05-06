@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThirdPerson } from "./pages/ThirdPerson";
 import { Home } from "./pages/Home";
+import { ToonTank } from "./pages/ToonTank";
+import { ThirdpersonShooter } from "./pages/ThirdPersonShooter";
 import { RetroHack } from "./pages/RetroHack";
 import { Synergy } from "./pages/Synergy";
 import { KindledSpirits } from "./pages/KindledSpirits";
@@ -22,6 +24,24 @@ const router = createBrowserRouter([
       </>
     ),
     exact: true,
+  },
+  {
+    path: "/projects/toon-tank",
+    element: (
+      <>
+        <ScrollToTop />
+        <ToonTank />
+      </>
+    ),
+  },
+  {
+    path: "/projects/thirdperson-shooter",
+    element: (
+      <>
+        <ScrollToTop />
+        <ThirdpersonShooter />
+      </>
+    ),
   },
   {
     path: "/projects/third-person",

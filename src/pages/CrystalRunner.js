@@ -45,7 +45,7 @@ export const CrystalRunner = () => {
         ]}
         heroImage={hero}
         images={[forest, enemy, ice]}
-        videoUrl="https://www.youtube.com/embed/SWoJ2t6nH8s"
+        videoUrl="https://www.youtube.com/embed/hD54wI8r3qU"
       />
     </>
   );
