@@ -2,7 +2,6 @@ import React from "react";
 import { NavBar } from "../components/NavBar";
 import { ProjectDetailsTemplate } from "../components/ProjectDetailsTemplate";
 import Syner from "../assets/img/Synergy/Synergy.png";
-import Syner1 from "../assets/img/Synergy/Synergy1.png";
 import Syner2 from "../assets/img/Synergy/Synergy2.png";
 import Syner3 from "../assets/img/Synergy/Synergy3.png";
 import SynerMain from "../assets/img/Synergy/Synergy4.png";
